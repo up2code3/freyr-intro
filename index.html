@@ -2,29 +2,31 @@
 
 <html>
   <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+    </style>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>TW HOMEPAGE</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/index.css" />
+    
   </head>
 
   <body>
-    <h1>Tristans homepage</h1>
+    <h1>Tristan White</h1>
+
     <h2>About</h2>
-    <p>My name is Tristan , I am learning to code</p>
-    <h1>Tristan White homepage</h1>
-    <h2>About</h2>
-    <ul>
+    <ul id="about">
       <li>
         <p>
-          My name is <em>Tristan</em>, I am learning to <strong>code</strong>.
+          My name is<strong>Tristan</strong> and I am learning to<strong>code</strong>.
         </p>
       </li>
     </ul>
     <h2>Experience</h2>
-    <ul>
+    <ul id="liExp">
       <li>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet
@@ -35,7 +37,7 @@
       </li>
     </ul>
     <h2>Projects I've worked on</h2>
-    <ul>
+    <ul id="liProject">
       <li>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. rQuasi,
@@ -72,40 +74,37 @@
 
     <script src="" async defer></script>
     <ul>
-      <li>
+      <li id="liEmail">
         <a href="mailto:the_position3030@yahoo.com">click here to email me</a>
       </li>
       <br />
-      <li>
-        <a href="http://https://github.com/up2code3"
-          >click here for github profile</a
-        >
+      <li id="liGithub">
+        <a href="https://github.com/up2code3" target="_blank">click here for github profile</a>
       </li>
       <script src="" async defer></script>
     </ul>
-    <img
-      src="https://cdn4.whatculture.com/images/2019/07/45fb236659c21970-600x338.png"
-    />
+    
 
     <section>
       <h2>Leave a Message</h2>
+      <img src="https://cdn4.whatculture.com/images/2019/07/45fb236659c21970-600x338.png">
       <form name="leave_message">
-        <label for="usersName">usersName</label><br/>
-        <input type="text" name="usersName" required="true"><br/>
-        <label for="usersEmail">usersEmail</label><br/>
-        <input type="email" name="usersEmail" required="true"/><br />
-        <label for="usersMeassge">usersMessage</label><br/>
-        <textarea name="usersMessage" required="true"></textarea><br/>
-        <button type="submit">Submit</button>
+        <label    id="fL1" for="usersName">User Name</label><br />
+        <input    id="fI1" type="text" name="usersName" required="true" /><br />
+        <label    id="fL2" for="usersEmail">User E-Mail</label><br />
+        <input    id="fI2" type="email" name="usersEmail" required="true" /><br />
+        <label    id="fL3" for="usersMeassge">User Message</label><br />
+        <textarea id="fI3" name="usersMessage" required="true"></textarea><br />
+        <button id="formButton" type="submit">Submit</button>
       </form>
     </section>
 
     <section id="messages">
       <h2>Messages</h2>
-      <ul></ul>
+      <ul id="leaveMessage"></ul>
     </section>
 
-    <footer></footer>
+    <footer id="foot"></footer>
     <script src="js/index.js"></script>
   </body>
 </html>
