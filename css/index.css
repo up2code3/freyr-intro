@@ -1,108 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
 
-body 
-{background-color: #deb887;
- text-align: left; /*is this defaut*/
- font-family: "Oswald", sans-serif;
- padding: 40px;}
+.topnav{
+    position: sticky;
+    top:0;
+    background-color:rgb(189, 232, 249);
+    padding:10px;
+    border:3px solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+.exp{
+    max-width:800px;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
 
- *
-{margin:2%;}
+}
 
-img 
-{width: 100%;}
+.messageGrid{
+    width:800px;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    
+}
 
-h1 
-{font-size: 30px;
+
+body {
+    background-color: #deb887;
+    text-align: left; 
+    font-family: "Oswald", sans-serif;
+    /* padding: 40px; */
+}
+
+ *{
+    margin:2%;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 30px;
  font-weight: 700;
- color: maroon;}
+ color: maroon;
+}
 
-h2 
-{font-size: 20px;
+h2 {
+    font-size: 20px;
  font-weight: 100;
- color: maroon}
+ color: maroon
+}
 
-#about, #liExp, #liProject
-{background-color: bisque;
- margin: 10px;
- border:3px solid;
- border-radius: 10px;
- padding: 20px;}
+ #about, #liExp, #liProject{
+    background-color: bisque;
+    margin: 10px;
+    border:3px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
  
  
 
 
-#skills li 
-{background-color: orange;
- margin: 10px;
- border: 3px solid;
- border-radius: 10px;
- padding: 20px;}
+#skills li {
+    background-color: orange;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 20px;
+}
 
-#liEmail
-{background-color: darkkhaki;
- border: 3px solid;
- border-radius: 10px;
- padding: 10px;   
- margin-bottom: -25px;
- width: 134px;}
+#liEmail{
+    background-color: darkkhaki;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px;   
+    margin-bottom: -25px;
+    width: 134px;
+}
 
-#liGithub
-{background-color: darkkhaki;
- border: 3px solid;
- border-radius: 10px;
- padding: 10px;
- width: 165px;}
+#liGithub{
+    background-color: darkkhaki;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+    width: 165px;
+}
 
-
-#fL1 
-{font-size: 20px;
- color: red;}
-
-#fL2 
-{font-size: 20px;
- color: blue;}
-
-#fL3 
-{font-size: 20px;
- color: green;}
-
-#fI1 
-{font-size: 20px;
- color:  brown;
- margin-bottom: 25px;}
-
-#fI2 
-{font-size: 20px;
- color: brown;
- margin-bottom: 25px;}
-
-#fI3 
-{font-size: 20px;
- color: brown;
- margin-bottom: 25px;}
-
-#formButton
-{color:black;
- padding-inline:30px;
- background-color: #D5A021;
- border-color: #c18e27;}
-
-#leaveMessage
-{background-color:peachpuff;
-padding: 20px;
-border: 3px solid;
-border-radius: 10px;
-margin: 10px;}
-
-button
-{color:black;
- padding-inline:30px;
- background-color: #D5A021;
- border-color: #c18e27;}   
-
-
-
+.fontSize{
+    font-size: 20px;
+}
+#fL1 {
+    color: red;
+}
+#fL2 {
+    color: blue;
+}
+#fL3 {
+    color: green;
+}
+#fI1 {
+    color:  brown;
+    margin-bottom: 25px;
+}
+#fI2 {
+    color: brown;
+    margin-bottom: 25px;
+}
+#fI3 {
+    color: brown;
+    margin-bottom: 25px;
+}
+#formButton{
+    color:black;
+    padding-inline:30px;
+    background-color: #D5A021;
+    border-color: #c18e27;
+}
+#leaveMessage{
+    background-color:peachpuff;
+    padding: 20px;
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+button{
+    color:black;
+    padding-inline:30px;
+    background-color: #D5A021;
+    border-color: #c18e27;
+}   
 #foot{
 margin: 10px auto ;
 background-color:goldenrod;
@@ -112,8 +140,14 @@ width: 120px;
 }
 
 @media screen and (max-width: 320px){
-    #fL1,#fL2,#fL3,#fI1,#fI2,#fI3   
-    {margin-left: -30px}
+    .screen320{
+        margin-left: -30px
+    }
+}
+@media screen and (max-width: 920px){
+    .messageGrid{
+        grid-template-columns: auto;
+    }
 }
 
 /* the above slides the form fields 

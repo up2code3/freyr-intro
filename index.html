@@ -2,9 +2,7 @@
 
 <html>
   <head>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-    </style>
+
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>TW HOMEPAGE</title>
@@ -13,6 +11,15 @@
     <link rel="stylesheet" href="css/index.css" />
     
   </head>
+
+  <div class="topnav">
+    <a class="active" href="#top">Home</a>
+    <a href="#about">About</a>
+    <a href="#liExp">Experience</a>
+    <a href="#liProject">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#liEmail">Connect</a>
+  </div>
 
   <body>
     <h1>Tristan White</h1>
@@ -25,8 +32,9 @@
         </p>
       </li>
     </ul>
+    
     <h2>Experience</h2>
-    <ul id="liExp">
+    <ul id="liExp" class="exp">
       <li>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eveniet
@@ -35,7 +43,25 @@
           quas?
         </p>
       </li>
+      <li>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ut 
+          animi voluptatibus nisi! Ex dolorem deserunt quam quis labore? 
+          Soluta ipsam aliquam atque quis possimus placeat fuga cupiditate vitae vel.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quam, 
+          eligendi nostrum cum maiores tempore inventore consectetur incidunt mollitia 
+          illum ut? Ad alias quibusdam voluptate rerum voluptas illum recusandae nihil!
+        </p>
+      </li>
+      <li>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum aliquid beatae 
+          illo voluptates veniam asperiores commodi consectetur, 
+          error in iste iure dolorum repudiandae sed. Praesentium atque deserunt quis laborum!
+        </p>
+      </li>
     </ul>
+    
     <h2>Projects I've worked on</h2>
     <ul id="liProject">
       <li>
@@ -84,19 +110,27 @@
       <script src="" async defer></script>
     </ul>
     
-
-    <section>
+    <img src="https://cdn4.whatculture.com/images/2019/07/45fb236659c21970-600x338.png">
+    
+    <section class="fontSize">
       <h2>Leave a Message</h2>
-      <img src="https://cdn4.whatculture.com/images/2019/07/45fb236659c21970-600x338.png">
-      <form name="leave_message">
-        <label    id="fL1" for="usersName">User Name</label><br />
-        <input    id="fI1" type="text" name="usersName" required="true" /><br />
-        <label    id="fL2" for="usersEmail">User E-Mail</label><br />
-        <input    id="fI2" type="email" name="usersEmail" required="true" /><br />
-        <label    id="fL3" for="usersMeassge">User Message</label><br />
-        <textarea id="fI3" name="usersMessage" required="true"></textarea><br />
-        <button id="formButton" type="submit">Submit</button>
-      </form>
+        <form name="leave_message">
+          <ul class="messageGrid">
+            <li>
+              <label   class="screen320" id="fL1" for="usersName">User Name</label><br />
+              <input   class="screen320" id="fI1" type="text" name="usersName" required="true" /><br />
+            </li>
+            <li>
+              <label   class="screen320" id="fL2" for="usersEmail">User E-Mail</label><br />
+              <input   class="screen320" id="fI2" type="email" name="usersEmail" required="true" /><br />
+            </li>
+            <li>
+              <label   class="screen320" id="fL3" for="usersMeassge">User Message</label><br />
+              <textarea class="screen320" id="fI3" name="usersMessage" required="true"></textarea><br />
+            </li>
+          </ul>
+          <button id="formButton" type="submit">Submit</button>
+        </form>
     </section>
 
     <section id="messages">
