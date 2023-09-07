@@ -2,14 +2,12 @@
 
 <html>
   <head>
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>TW HOMEPAGE</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
-    
   </head>
 
   <div class="topnav">
@@ -28,11 +26,12 @@
     <ul id="about">
       <li>
         <p>
-          My name is<strong>Tristan</strong> and I am learning to<strong>code</strong>.
+          My name is<strong>Tristan</strong> and I am learning
+          to<strong>code</strong>.
         </p>
       </li>
     </ul>
-    
+
     <h2>Experience</h2>
     <ul id="liExp" class="exp">
       <li>
@@ -45,23 +44,25 @@
       </li>
       <li>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio ut 
-          animi voluptatibus nisi! Ex dolorem deserunt quam quis labore? 
-          Soluta ipsam aliquam atque quis possimus placeat fuga cupiditate vitae vel.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quam, 
-          eligendi nostrum cum maiores tempore inventore consectetur incidunt mollitia 
-          illum ut? Ad alias quibusdam voluptate rerum voluptas illum recusandae nihil!
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
+          ut animi voluptatibus nisi! Ex dolorem deserunt quam quis labore?
+          Soluta ipsam aliquam atque quis possimus placeat fuga cupiditate vitae
+          vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Aspernatur quam, eligendi nostrum cum maiores tempore inventore
+          consectetur incidunt mollitia illum ut? Ad alias quibusdam voluptate
+          rerum voluptas illum recusandae nihil!
         </p>
       </li>
       <li>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum aliquid beatae 
-          illo voluptates veniam asperiores commodi consectetur, 
-          error in iste iure dolorum repudiandae sed. Praesentium atque deserunt quis laborum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum
+          aliquid beatae illo voluptates veniam asperiores commodi consectetur,
+          error in iste iure dolorum repudiandae sed. Praesentium atque deserunt
+          quis laborum!
         </p>
       </li>
     </ul>
-    
+
     <h2>Projects I've worked on</h2>
     <ul id="liProject">
       <li>
@@ -105,32 +106,58 @@
       </li>
       <br />
       <li id="liGithub">
-        <a href="https://github.com/up2code3" target="_blank">click here for github profile</a>
+        <a href="https://github.com/up2code3" target="_blank"
+          >click here for github profile</a
+        >
       </li>
       <script src="" async defer></script>
     </ul>
-    
-    <img src="https://cdn4.whatculture.com/images/2019/07/45fb236659c21970-600x338.png">
-    
-    <section class="fontSize">
-      <h2>Leave a Message</h2>
-        <form name="leave_message">
-          <ul class="messageGrid">
-            <li>
-              <label   class="screen320" id="fL1" for="usersName">User Name</label><br />
-              <input   class="screen320" id="fI1" type="text" name="usersName" required="true" /><br />
-            </li>
-            <li>
-              <label   class="screen320" id="fL2" for="usersEmail">User E-Mail</label><br />
-              <input   class="screen320" id="fI2" type="email" name="usersEmail" required="true" /><br />
-            </li>
-            <li>
-              <label   class="screen320" id="fL3" for="usersMeassge">User Message</label><br />
-              <textarea class="screen320" id="fI3" name="usersMessage" required="true"></textarea><br />
-            </li>
-          </ul>
-          <button id="formButton" type="submit">Submit</button>
-        </form>
+
+    <img
+      src="https://cdn4.whatculture.com/images/2019/07/45fb236659c21970-600x338.png"
+    />
+
+    <section class="formSection">
+     
+      <form class="messageForm" name="leave_message">
+        <h2>Leave a Message</h2>
+        <div class="inputContainer">
+          <label class="screen320" id="fL1" for="usersName">User Name</label
+          >
+          <input
+            class="screen320"
+            id="fI1"
+            type="text"
+            name="usersName"
+            required="true"
+          />
+        </div>
+        <div class="inputContainer">
+          <label class="screen320" id="fL2" for="usersEmail">User E-Mail</label
+          >
+          <input
+            class="screen320"
+            id="fI2"
+            type="email"
+            name="usersEmail"
+            required="true"
+          />
+        </div>
+        <div class="inputContainer">
+          <label class="screen320" id="fL3" for="usersMeassge"
+            >User Message</label
+          >
+          <textarea
+            class="screen320"
+            id="fI3"
+            name="usersMessage"
+            required="true"
+          ></textarea
+          >
+        </div>
+
+        <button id="formButton" type="submit">Submit</button>
+      </form>
     </section>
 
     <section id="messages">
