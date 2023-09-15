@@ -29,7 +29,7 @@
   margin: 10px;
 }
 .exp {
-  max-width: 800px;
+  max-width: 100%;
   display: grid;
   grid-template-columns: 200px auto 200px;
 }
