@@ -1,18 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
+.formSection {
+ background-color: silver;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  align-items: flex-start;
+  }
+
 .messageForm {
+  /* background-color: grey; */
   width:350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .inputContainer {
+  /* background-color: pink; */
   display: flex;
   align-items: center;
   margin-bottom: 16px;
   justify-content: space-between;
   padding:0 32px;
-  
 }
 /* .inputContainer label{
     margin-right: 16px;
@@ -29,9 +39,9 @@
   margin: 10px;
 }
 .exp {
+  display:flex;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 200px auto 200px;
+  flex-direction: column;
 }
 
 .messageGrid {
@@ -52,7 +62,7 @@ body {
 } */
 
 img {
-  width: 100%;
+  width:100%;
 }
 
 h1 {
@@ -66,49 +76,32 @@ h2 {
   font-weight: 100;
   color: maroon;
 }
-
+/* #gitAndEmail,
+#projects,
+#skills,
 #about,
 #liExp,
-#liProject {
+#messageForm,
+#liProject  */
+.myStyle{
+  display: flex;
+  flex-direction: column;
   background-color: bisque;
   margin: 10px;
   border: 3px solid;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
 }
-
-#skills li {
-  background-color: orange;
-  margin: 10px;
-  border: 3px solid;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-#liEmail {
-  background-color: darkkhaki;
-  border: 3px solid;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: -25px;
-  width: 134px;
-}
-
-#liGithub {
-  background-color: darkkhaki;
-  border: 3px solid;
-  border-radius: 10px;
-  padding: 10px;
-  width: 165px;
-}
-
-.formSection {
+.imgStyle {
   display:flex;
-  flex-direction: column;
-  align-items:center;
   justify-content: center;
-  height:200px;
+
+
+width: 100%;
+
 }
+
+
 #fL1 {
   color: red;
 }
@@ -139,19 +132,24 @@ h2 {
   align-self: flex-end;
   margin-right: 32px;
 }
-#leaveMessage {
+/* #leaveMessage {
   background-color: peachpuff;
   padding: 20px;
   border: 3px solid;
   border-radius: 10px;
   margin: 10px;
-}
+} */
 button {
   color: black;
   padding-inline: 30px;
   background-color: #d5a021;
   border-color: #c18e27;
+  cursor: pointer;
 }
+.removeButtonAlt {
+margin-left: 10px ;
+}
+
 #foot {
   display:flex;
   justify-content: center;

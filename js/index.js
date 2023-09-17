@@ -55,12 +55,11 @@ messageForm.addEventListener('submit', (e) => {
     let removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type='button';
-
+    removeButton.classList.add("removeButtonAlt")
     newMessage.appendChild(removeButton);
     removeButton.addEventListener('click', (e) => {
       let entry = removeButton.parentNode;
       entry.remove();
-
     })
 
     messageForm.reset();
@@ -68,39 +67,37 @@ messageForm.addEventListener('submit', (e) => {
 
 
 
+
 fetch("https://api.github.com/users/up2code3/repos")
   .then(response => response.json())
   .then(repositories => {
-    
-     
+
       let projectSection = document.getElementById("projects") 
       let projectList = projectSection.querySelector("ul")
       
-      for (var i = 0 ; i < repositories.length ; i++){
+        for (var i = 0 ; i < repositories.length ; i++){
+          let projectUrl = repositories[i].html_url;
+          let projectName = repositories[i].name;  
+          let projectDescription = repositories[i].description;
+          
+          let project = document.createElement("li");
+          let link = document.createElement("a");
+          let paragraph = document.createElement("p");
+
+          link.innerText = projectName;   
+          link.href = projectUrl;
+          paragraph.innerText = projectDescription;
+
+          projectList.appendChild(project);
+          project.appendChild(link);
+          project.appendChild(paragraph);
+        }
+  })
 
         
         
-        let projectName = repositories[i].name;  
-        let projectUrl = repositories[i].html_url;
-        let projectDescription = repositories[i].description;
-
-
-        let project = document.createElement("li");
-        let link = document.createElement("a");
-        let paragraph = document.createElement("p");
-        
-        link.innerText = projectName;   
-        link.href = projectUrl;
-        paragraph.innerText = projectDescription;
-        
-        projectList.appendChild(project);
-        project.appendChild(link);
-        project.appendChild(paragraph);
         
 
-      }
-      console.log(repositories)
-    })
   
   
 
