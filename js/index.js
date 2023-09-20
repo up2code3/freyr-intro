@@ -55,57 +55,51 @@ messageForm.addEventListener('submit', (e) => {
     let removeButton = document.createElement('button');
     removeButton.innerText = 'remove';
     removeButton.type='button';
-
+    removeButton.classList.add("removeButtonAlt")
     newMessage.appendChild(removeButton);
     removeButton.addEventListener('click', (e) => {
       let entry = removeButton.parentNode;
       entry.remove();
-
     })
 
     messageForm.reset();
 });
 
-let githubRequest = new XMLHttpRequest();
-
-githubRequest.open("GET","https://api.github.com/users/up2code3/repos")
-githubRequest.send();
-
-addEventListener("load", (Event) => {
-  let repositories = JSON.parse(githubRequest.responseText);
-  console.log(repositories)
 
 
-// I compared the next to lines of code to the message section above to make sure it was right 
-let projectSection = document.getElementById("projects") 
-let projectList = projectSection.querySelector("ul") // this queries just the project section and not the whole page  
+
+fetch("https://api.github.com/users/up2code3/repos")
+  .then(response => response.json())
+  .then(repositories => {
+
+      let projectSection = document.getElementById("projects") 
+      let projectList = projectSection.querySelector("ul")
+      
+        for (var i = 0 ; i < repositories.length ; i++){
+          let projectUrl = repositories[i].html_url;
+          let projectName = repositories[i].name;  
+          let projectDescription = repositories[i].description;
+          
+          let project = document.createElement("li");
+          let link = document.createElement("a");
+          let paragraph = document.createElement("p");
+
+          link.innerText = projectName;   
+          link.href = projectUrl;
+          paragraph.innerText = projectDescription;
+
+          projectList.appendChild(project);
+          project.appendChild(link);
+          project.appendChild(paragraph);
+        }
+  })
+
+        
+        
+        
+
+  
+  
 
 
-for (var i = 0 ; i < repositories.length ; i++){
-  let project = document.createElement("li");  
-  project.innerText = repositories[i].name; 
-  projectList.appendChild(project);
-}
-})
-
-//  I was stuck on line 87 for awhile, it had 7 li under the 
-//  projects element on the page, but they all said object object,
-//  so eventually it dawned on me to do the .name to refer 
-//  to the key of the pair. but that didnt work, so i tired name:,
-//  i thought maybe the colon was aprat of the name, it through 
-//  an error, so I deleted the colon leaving it as .name
-//  and suddenly it worked... weird... , even as i was typing this 
-//  message all of the li's under projects disappeared, and 
-//  I thought i broke it again, then I did a refresh and they came back. 
-// this is the error message it threw when they all randomly disappear 
-// 
-//  VM2188:1 Uncaught SyntaxError: Unexpected end of JSON input
-//     at JSON.parse (<anonymous>)at index.js:75:27</anonymous>
-//
-// then I just refresh and there is no longer an error, I think 
-//  I had this code right a few Times , but I would see the error,
-// and think it was broke, so I would try something else. I guess 
-//  i was just moving to fast? or maybe the autosave and auto refresh feature is 
-// making things Weird , or does AJAX just casue funny behavior?
-//  jeeez it broke after I type this message, and it took 3 refresh to get it back.
-// as of right now I see all the projects listed, I am going to save and commit.
+ 
