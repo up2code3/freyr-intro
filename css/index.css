@@ -1,36 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
+.nameHeader {
+  display: flex;
+  margin-left: 20px;
+  color: maroon;
+}
+
 .formSection {
- background-color: silver;
-  display:flex;
+  background-color: silver;
+  display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   align-items: flex-start;
-  }
+}
 
 .messageForm {
-  /* background-color: grey; */
-  width:350px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .inputContainer {
-  /* background-color: pink; */
   display: flex;
   align-items: center;
   margin-bottom: 16px;
   justify-content: space-between;
-  padding:0 32px;
+  padding: 0 32px;
 }
-/* .inputContainer label{
-    margin-right: 16px;
-} */
+
 .topnav {
-  display:flex;
+  font-size: 23px;
+  display: flex;
   justify-content: space-between;
-  padding:16px 32px;
+  flex-wrap: wrap;
+  width: 93.7%;
+  padding: 16px 32px;
   position: sticky;
   top: 0;
   background-color: rgb(189, 232, 249);
@@ -38,52 +44,42 @@
   border-radius: 10px;
   margin: 10px;
 }
-.exp {
-  display:flex;
-  max-width: 100%;
-  flex-direction: column;
-}
-
-.messageGrid {
-  width: 800px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
 
 body {
   background-color: #deb887;
   text-align: left;
   font-family: "Oswald", sans-serif;
-  /* padding: 40px; */
-}
-
-/* * {
-  margin: 2%;
-} */
-
-img {
-  width:100%;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: 700;
-  color: maroon;
+  padding: 40px;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 100;
+  font-size: 30px;
+  font-weight: 530;
   color: maroon;
 }
-/* #gitAndEmail,
-#projects,
-#skills,
-#about,
-#liExp,
-#messageForm,
-#liProject  */
-.myStyle{
+
+.expColumn ul {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+}
+
+.expColumn li {
+  min-width: 46%;
+  justify-content: space-between;
+  list-style-type: none;
+  /* width:100%; */
+  flex: 0 0;
+  padding: 10px;
+}
+
+#messages a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.myStyle {
+  width: 94%;
   display: flex;
   flex-direction: column;
   background-color: bisque;
@@ -91,40 +87,29 @@ h2 {
   border: 3px solid;
   border-radius: 10px;
   padding: 30px;
+  font-size: 24px;
 }
+
 .imgStyle {
-  display:flex;
+  display: flex;
   justify-content: center;
-
-
-width: 100%;
-
+  width: 100%;
 }
 
-
-#fL1 {
+.fL1 {
   color: red;
 }
-#fL2 {
+
+.fL2 {
   color: blue;
 }
-#fL3 {
+
+.fL3 {
   color: green;
 }
-/* #fI1 {
-  color: brown;
-  margin-bottom: 25px;
-}
-#fI2 {
-  color: brown;
-  margin-bottom: 25px;
-}
-#fI3 {
-  color: brown;
-  margin-bottom: 25px;
-} */
+
 #formButton {
-    width:100px;
+  width: 100px;
   color: black;
   padding-inline: 30px;
   background-color: #d5a021;
@@ -132,13 +117,7 @@ width: 100%;
   align-self: flex-end;
   margin-right: 32px;
 }
-/* #leaveMessage {
-  background-color: peachpuff;
-  padding: 20px;
-  border: 3px solid;
-  border-radius: 10px;
-  margin: 10px;
-} */
+
 button {
   color: black;
   padding-inline: 30px;
@@ -146,12 +125,13 @@ button {
   border-color: #c18e27;
   cursor: pointer;
 }
+
 .removeButtonAlt {
-margin-left: 10px ;
+  margin-left: 10px;
 }
 
 #foot {
-  display:flex;
+  display: flex;
   justify-content: center;
   margin: 10px auto;
   background-color: goldenrod;
@@ -160,20 +140,46 @@ margin-left: 10px ;
   width: 120px;
 }
 
-@media screen and (max-width: 320px) {
+.formSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 400px) {
   .screen320 {
-    margin-left: -30px;
+    margin-left: -50px;
   }
-}
-@media screen and (max-width: 920px) {
-  .messageGrid {
-    grid-template-columns: auto8;
+  #formButton {
+    margin-right: 113px;
+  }
+  .inputBox {
+    margin-right: 80px;
+  }
+  .topnav {
+    position: sticky;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px 32px;
+    font-size: 12px;
+    top: 0;
+    background-color: rgb(189, 232, 249);
+    border: 3px solid;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .myStyle {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    width: 100%;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 18px;
   }
 }
 
-/* the above slides the form fields 
-to the right when in phone size*/
-
-/* note: need to refactor everything and 
-rework some things, the bullets, 
-some are in the box while others are not??? */
