@@ -1,0 +1,37 @@
+[33mf93a8aa[m[33m ([m[1;36mHEAD -> [m[1;32mlesson-6-2[m[33m, [m[1;31morigin/lesson-6-2[m[33m)[m final project complete
+[33m19e3ecb[m CSS clean up , converted to classes
+[33m47a2fbc[m ajax fetch and 6-1 strecth goals
+[33m8eca274[m[33m ([m[1;32mmain[m[33m)[m Merge pull request #8 from up2code3/lesson-6-1
+[33ma98c5b3[m AJAX to github to Projects element
+[33m744bbc6[m Merge pull request #7 from up2code3/lesson-4-5
+[33m03eb7ec[m[33m ([m[1;31morigin/lesson-4-5[m[33m, [m[1;32mlesson-4-5[m[33m)[m all sorts of stuff mostly flexbox
+[33mfb3090b[m css work, exp in column, top nav sticky,message form in column, @media 920 message form, adjusted per eacher notes on last push
+[33m29a5028[m Merge pull request #6 from up2code3/lesson-4-4
+[33mf948240[m[33m ([m[1;31morigin/lesson-4-4[m[33m)[m create CSS and styled page , a few changes to index html reflecting CSS
+[33m07950d1[m Merge pull request #5 from up2code3/lesson-4-3
+[33md245622[m[33m ([m[1;31morigin/lesson-4-3[m[33m, [m[1;32mlesson-4-3[m[33m)[m created messageForm add listSection message handler changes to html file and js file week10 L-4.3 8-2-23
+[33m4127893[m Merge pull request #4 from up2code3/lesson-4-2
+[33me231108[m[33m ([m[1;31morigin/lesson-4-2[m[33m)[m add skills section wiuth dom selector also add copyright footer
+[33m0ccb870[m Merge pull request #3 from up2code3/lesson-3-1
+[33m3069c9a[m[33m ([m[1;31morigin/lesson-3-1[m[33m)[m Merge branch 'main' into lesson-3-1
+[33mb03cfdd[m what is happening
+[33mb37e2e2[m Merge branch 'lesson-3-1'
+[33m448bde7[m Merge branch 'main' into lesson-3-1
+[33mf74f771[m[33m ([m[1;31morigin/lesson-4-1[m[33m, [m[1;32mlesson-4-1[m[33m)[m used <ul> to list thigns and add picture
+[33mc21ecda[m[33m ([m[1;32mlesson-3-1[m[33m)[m bash suggest to avoid overwrite
+[33m0dedadc[m Merge pull request #2 from up2code3/lesson-3-1
+[33mf8712f1[m add info to Tristan homepage
+[33m12cc942[m Merge pull request #1 from up2code3/lesson-2-1
+[33m19dab95[m[33m ([m[1;31morigin/lesson-2-1[m[33m, [m[1;32mlesson-2-1[m[33m)[m change name to www
+[33m9e3996f[m  A message of what i have done different
+[33m87a0c7d[m moved index.html to proper location
+[33m438e498[m Update how-to-submit.md
+[33mcd943aa[m Update how-to-submit.md
+[33ma90b814[m Update how-to-pull-request.md
+[33m7d31780[m Update how-to-merge.md
+[33m41cac0a[m Update lesson-2-1.md
+[33m6e571b7[m Update lesson-2-1.md
+[33m85ab133[m Update rubric.md
+[33m3455586[m Update lesson-2-1.md
+[33m9530b46[m Update lesson-2-1.md
+[33m690701d[m Initial commit
