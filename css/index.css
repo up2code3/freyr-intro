@@ -90,12 +90,6 @@ h2 {
   font-size: 24px;
 }
 
-.imgStyle {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
 .fL1 {
   color: red;
 }
@@ -145,6 +139,11 @@ button {
   flex-wrap: wrap;
   justify-content: flex-start;
 }
+.myStyle img {
+  max-width: 50%;
+  height: auto;
+  align-self: flex-end;
+}
 
 @media screen and (max-width: 400px) {
   .screen320 {
@@ -170,6 +169,7 @@ button {
     border-radius: 10px;
     margin: 10px;
   }
+
   .myStyle {
     display: flex;
     flex-direction: column;
@@ -182,4 +182,3 @@ button {
     font-size: 18px;
   }
 }
-

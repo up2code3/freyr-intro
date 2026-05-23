@@ -1,3 +1,18 @@
+Open Repo in Editor
+
+For Vscode 
+Click Go Live in the bottom right corner.
+
+In a File Browser 
+Click the index Html File in the repo dir.
+
+Or simply go to localhost:5500 in browser (note: check forwarding ports in editor)
+
+This is a simple resume project from the Intro Class at Code the Dream
+HTML, CSS, JavaScript, AJAX, And API/Fetch
+
+
+
 # Sections 2-6: Personal Portfolio
 
 ## Overview
